@@ -11,6 +11,7 @@ namespace CursoCsharp.Fundamentos
             double preco = 5800.00;
 
             Console.WriteLine("O " + nome + " da marca " + marca + " custa " + preco + " reais.");
+            Console.WriteLine("O {0} da marca {1} custa {2} reais.", nome, marca, preco);
         }
     }
 }
