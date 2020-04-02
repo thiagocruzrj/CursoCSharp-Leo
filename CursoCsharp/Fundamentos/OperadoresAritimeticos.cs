@@ -19,6 +19,13 @@ namespace CursoCsharp.Fundamentos
             double altura = 1.78;
             double imc = peso / Math.Pow(altura, 2);
             Console.WriteLine($"Seu imc é: {imc}");
+
+            // Numero par e impar
+            int par = 4;
+            int impar = 55;
+
+            Console.WriteLine($"{par}/2 tem resto {par % 2}");
+            Console.WriteLine($"{impar}/2 tem resto {impar % 2}");
         }
     }
 }
