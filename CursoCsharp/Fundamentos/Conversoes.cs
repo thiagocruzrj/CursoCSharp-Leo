@@ -22,11 +22,15 @@ namespace CursoCsharp.Fundamentos
             idadeInteiro = Convert.ToInt32(idadeString);
             Console.WriteLine($"Idade convertida {idadeInteiro}");
 
-            Console.WriteLine("Digite um numero :");
+            Console.Write("Digite o primeiro numero :");
             string palavra = Console.ReadLine();
-            int numero;
-            int.TryParse(palavra, out numero);
-            Console.WriteLine($"Resultado {numero}");
+            //int numero;
+            int.TryParse(palavra, out int numero);
+            Console.WriteLine($"Resultado : {numero}");
+
+            Console.Write("Digite o segundo numero :");
+            int.TryParse(Console.ReadLine(), out int numero2);
+            Console.WriteLine($"Resultado 2: {numero2}");
         }
     }
 }
