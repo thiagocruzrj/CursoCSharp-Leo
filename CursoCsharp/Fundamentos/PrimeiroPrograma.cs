@@ -4,7 +4,7 @@ namespace CursoCsharp.Fundamentos
 {
     class PrimeiroPrograma
     {
-        static void Executar()
+        public static void Executar()
         {
             Console.Write("Primeiro ");
             Console.WriteLine("Programa");
