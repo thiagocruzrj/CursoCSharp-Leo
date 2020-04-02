@@ -17,6 +17,7 @@ namespace CursoCSharp
                 {"Notação ponto - Fundamentos", NotacaoPonto.Executar},
                 {"Lendo Dados - Fundamentos", LendoDados.Executar},
                 {"Formatando Números - Fundamentos", FormatandoNumero.Executar},
+                {"Conversoes - Fundamentos", Conversoes.Executar},
             });
 
             central.SelecionarEExecutar();
