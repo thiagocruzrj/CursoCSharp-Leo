@@ -18,6 +18,8 @@ namespace CursoCsharp.Fundamentos
             Console.WriteLine(valor.ToString("C0", cultura));
             Console.WriteLine(valor.ToString("C2", culturaEua));
 
+            int inteiro = 256;
+            Console.WriteLine(inteiro.ToString("D10"));
         }
     }
 }
