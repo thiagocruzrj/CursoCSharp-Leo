@@ -44,6 +44,21 @@ namespace CursoCsharp.Fundamentos
 
             ulong populacaoMundial = 7_600_000_000;
             Console.WriteLine("População mundial : " + populacaoMundial);
+
+            float precoComputador = 1299.89f;
+            Console.WriteLine("Computador preco: " + precoComputador);
+
+            double valorDeMercadoApple = 1_000_000_000_000.00;
+            Console.WriteLine("Valor mercado apple: " + valorDeMercadoApple);
+
+            decimal distanciaDasEstrelasEmMetros = decimal.MaxValue;
+            Console.WriteLine("Distancia entre estrelas" + distanciaDasEstrelasEmMetros);
+
+            char letra = 'b';
+            Console.WriteLine(letra);
+
+            string text = "Bem vindo ao curso de C#";
+            Console.WriteLine(text);
         }
     }
 }
