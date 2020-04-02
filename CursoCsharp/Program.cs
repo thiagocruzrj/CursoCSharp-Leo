@@ -18,6 +18,7 @@ namespace CursoCSharp
                 {"Lendo Dados - Fundamentos", LendoDados.Executar},
                 {"Formatando Números - Fundamentos", FormatandoNumero.Executar},
                 {"Conversoes - Fundamentos", Conversoes.Executar},
+                {"Operadores Aritimeticos - Fundamentos", OperadoresAritimeticos.Executar},
             });
 
             central.SelecionarEExecutar();
