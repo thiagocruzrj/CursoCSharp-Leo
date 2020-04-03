@@ -6,8 +6,10 @@ namespace CursoCsharp.Fundamentos
     {
         public static void Executar()
         {
-            var nota = 7;
-            var resultado = nota >= 7.0 ? "Aprovado" : "Reprovado"; 
+            var nota = 9;
+            bool bomComportamento = false;
+            var resultado = nota >= 7.0 && bomComportamento ? "Aprovado" : "Reprovado";
+            Console.WriteLine(resultado);
         }
     }
 }
