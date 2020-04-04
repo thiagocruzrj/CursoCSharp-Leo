@@ -26,13 +26,14 @@ namespace CursoCsharp.EstruturasDeControle
                     break;
                 case 5:
                     Console.WriteLine("Ótimos");
+                    Console.WriteLine("Estamos muito felizes com isso !");
                     break;
                 default:
                     Console.WriteLine("Nota inválida");
                     break;
             }
 
-            Console.WriteLine("Finalizando atendimento");
+            Console.WriteLine("Atendimento finalizado ...");
         }
     }
 }
