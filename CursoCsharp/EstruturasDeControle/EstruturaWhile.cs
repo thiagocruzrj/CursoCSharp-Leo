@@ -31,11 +31,11 @@ namespace CursoCsharp.EstruturasDeControle
                     Console.WriteLine($"Numero encontrado em ({tentativas}) tentativas");
                     Console.BackgroundColor = corAnterior;
                 } else if (palpite > numeroSecreto) {
-                    Console.WriteLine("Maior que o número secreto ... tente novamente");
+                    Console.WriteLine("O valor é MAIOR que o número secreto ... tente novamente");
                     Console.WriteLine($"Tentativas restante: {tentativasRestantes}");
                 } else
                 {
-                    Console.WriteLine("Menor que o número secreto ... tente novamente");
+                    Console.WriteLine("O valor é Memor que o número secreto ... tente novamente");
                     Console.WriteLine($"Tentativas restante: {tentativasRestantes}");
                 }
             }
