@@ -18,11 +18,13 @@ namespace CursoCsharp.EstruturasDeControle
                 if (i == num)
                 {
                     Console.WriteLine("Sim!");
+                    break;
                 } else
                 {
                     Console.WriteLine("Não!");
                 }
             }
+            Console.WriteLine("Fim");
         }
     }
 }
