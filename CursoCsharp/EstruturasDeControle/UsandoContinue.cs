@@ -9,12 +9,12 @@ namespace CursoCsharp.EstruturasDeControle
             int intevalo = 50;
             Console.WriteLine($"Numeros pares entre 1 e {intevalo}!");
 
-            for (int i = 1; i < intevalo; i++)
+            for (int i = 2; i < intevalo; i += 2)
             {
-                if (i % 2 == 1)
-                {
-                    continue;
-                }
+                //if (i % 2 == 1)
+                //{
+                //    continue;
+                //}
                 Console.Write($"{i} ");
             }
         }
