@@ -8,11 +8,12 @@ namespace CursoCsharp.EstruturasDeControle
         {
             double nota = 7.0;
 
-            if(nota > 7)
+            if (nota >= 7)
             {
                 Console.WriteLine("Aprovado!");
                 Console.WriteLine("Fez sua obrigação!");
-            } else
+            }
+            else
             {
                 Console.WriteLine("Recuperação");
             }
