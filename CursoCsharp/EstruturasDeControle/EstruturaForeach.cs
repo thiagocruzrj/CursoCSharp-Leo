@@ -6,7 +6,12 @@ namespace CursoCsharp.EstruturasDeControle
     {
         public static void Executar()
         {
+            var palavra = "Eae rapeize!";
 
+            foreach (var letra in palavra)
+            {
+                Console.WriteLine(letra);
+            }
         }
     }
 }
