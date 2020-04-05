@@ -74,6 +74,12 @@ namespace CursoCsharp.ClassesEMetodos
             Console.WriteLine(calculadoraComum.Subtrair(1,2));
             Console.WriteLine(calculadoraComum.Multiplicar(1,2));
             Console.WriteLine(calculadoraComum.Dividir(1,2));
+
+            var calculadoraCadeia = new CalculadoraCadeia();
+            calculadoraCadeia.Somar(3).Multiplicar(3).Imprimir().Limpar().Imprimir();
+
+            var resultado = calculadoraCadeia.Somar(3).Multiplicar(2).Resultado();
+            Console.WriteLine(resultado);
         }
     }
 }
