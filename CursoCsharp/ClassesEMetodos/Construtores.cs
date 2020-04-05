@@ -34,6 +34,14 @@ namespace CursoCsharp.ClassesEMetodos
 
             var carro2 = new Carro("Ka", "Ford", 2018);
             Console.WriteLine($"O carro {carro2.Modelo} da fabricante {carro2.Fabricante} construido no ano {carro2.Ano} foi leiloado.");
+
+            var carro3 = new Carro()
+            {
+                Modelo = "Uno",
+                Fabricante = "Fiat",
+                Ano = 2012
+            };
+            Console.WriteLine($"O carro {carro3.Modelo} da fabricante {carro3.Fabricante} construido no ano {carro3.Ano} foi leiloado.");
         }
     }
 }
