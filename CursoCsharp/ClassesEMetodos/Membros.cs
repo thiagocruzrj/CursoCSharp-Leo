@@ -13,6 +13,13 @@ namespace CursoCsharp.ClassesEMetodos
             // Console.WriteLine($"{teste.Nome} tem {teste.Idade} !");
 
             teste.ApresentarNoConsole();
+
+            var testeVar = new Pessoa();
+            testeVar.Nome = "Isabella";
+            testeVar.Idade = 25;
+
+            var apresentacaoIsabella = testeVar.Apresentar();
+            Console.WriteLine(apresentacaoIsabella);
         }
     }
 }
