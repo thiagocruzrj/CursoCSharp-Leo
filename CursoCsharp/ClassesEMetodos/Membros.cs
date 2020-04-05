@@ -7,11 +7,20 @@ namespace CursoCsharp.ClassesEMetodos
         public static void Executar()
         {
             Pessoa teste = new Pessoa();
-            teste.Nome = "Thiago";
-            teste.Idade = 26;
+            teste.Nome = "";
+            teste.Idade = 0;
+
+            if(teste.Nome == null || teste.Idade > 0)
+            {
+                teste.ApresentarNoConsole();
+            } else
+            {
+                Console.WriteLine("Sem informações de cadastro");
+            }
 
             // Console.WriteLine($"{teste.Nome} tem {teste.Idade} !");
 
+            teste.Zerar();
             teste.ApresentarNoConsole();
 
             var testeVar = new Pessoa();
