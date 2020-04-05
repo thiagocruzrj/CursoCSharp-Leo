@@ -40,6 +40,7 @@ namespace CursoCSharp
                 {"Usando Continue - Estruturas de Controle", UsandoContinue.Executar},
                 // Classes e metodos
                 {"Membros - Classes e Metodos", Membros.Executar},
+                {"Construtores - Classes e Metodos", Construtores.Executar},
             });
 
             central.SelecionarEExecutar();
