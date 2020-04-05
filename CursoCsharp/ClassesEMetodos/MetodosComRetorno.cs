@@ -25,6 +25,46 @@ namespace CursoCsharp.ClassesEMetodos
         }
     }
 
+    class CalculadoraCadeia
+    {
+        int memoria;
+
+        public CalculadoraCadeia Somar(int a)
+        {
+            memoria += a;
+            return this;
+        }
+
+        public CalculadoraCadeia Subtrair(int a)
+        {
+            memoria -= a;
+            return this;
+        }
+
+        public CalculadoraCadeia Multiplicar(int a)
+        {
+            memoria *= a;
+            return this;
+        }
+
+        public CalculadoraCadeia Limpar()
+        {
+            memoria = 0;
+            return this;
+        }
+
+        public CalculadoraCadeia Imprimir()
+        {
+            Console.WriteLine(memoria);
+            return this;
+        }
+
+        public int Resultado()
+        {
+            return memoria;
+        }
+    }
+
     class MetodosComRetorno
     {
         public static void Executar()
