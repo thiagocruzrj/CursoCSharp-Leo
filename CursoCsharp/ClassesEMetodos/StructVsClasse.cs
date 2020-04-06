@@ -24,6 +24,13 @@ namespace CursoCsharp.ClassesEMetodos
 
             Console.WriteLine($"Ponto 1 X: {ponto1.X}");
             Console.WriteLine($"Copia ponto 1 X: {copiaPonto1.X}");
+
+            CPonto ponto2 = new CPonto { X = 2, Y = 4 };
+            CPonto copiaPonto2 = ponto2; // Atribuição de uma classe é feita por referencia (trocando assim o valor pelo novo setado)
+            ponto2.X = 6;
+
+            Console.WriteLine($"\nPonto 2 X: {ponto2.X}");
+            Console.WriteLine($"Copia ponto 2 X: {copiaPonto2.X}");
         }
     }
 }
