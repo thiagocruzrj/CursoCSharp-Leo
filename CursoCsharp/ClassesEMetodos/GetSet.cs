@@ -6,9 +6,9 @@ namespace CursoCsharp.ClassesEMetodos
     {
         private string Marca;
         private string Modelo;
-        private int Cilindrada;
+        private uint Cilindrada;
 
-        public Moto(string marca, string modelo, int cilindrada)
+        public Moto(string marca, string modelo, uint cilindrada)
         {
             //Marca = marca;
             //Modelo = modelo;
@@ -40,16 +40,20 @@ namespace CursoCsharp.ClassesEMetodos
             Modelo = modelo;
         }
 
-        public int GetCilindrada()
+        public uint GetCilindrada()
         {
             return Cilindrada;
         }
 
-        public void SetCilindrada(int cilindrada)
+        public void SetCilindrada(uint cilindrada)
         {
+            // 1 Opção
             //if(cilindrada > 0)
             //    Cilindrada = cilindrada;
-            Cilindrada = Math.Abs(cilindrada);
+            // 2 opção
+            //Cilindrada = Math.Abs(cilindrada);
+            // Somente inteiros positivos
+            Cilindrada = cilindrada;
         }
     }
 
@@ -57,7 +61,7 @@ namespace CursoCsharp.ClassesEMetodos
     {
         public static void Executar()
         {
-            var moto1 = new Moto("Kawasaki", "Z-1000", -1000);
+            var moto1 = new Moto("Kawasaki", "Z-1000", 1000);
 
             Console.WriteLine(moto1.GetMarca());
             Console.WriteLine(moto1.GetModelo());
@@ -67,7 +71,7 @@ namespace CursoCsharp.ClassesEMetodos
 
             moto2.SetMarca("Honda");
             moto2.SetModelo("Hornet");
-            moto2.SetCilindrada(-600);
+            moto2.SetCilindrada(600);
             Console.WriteLine($"A moto da marca {moto2.GetMarca()} do modelo {moto2.GetModelo()} tem o total de {moto2.GetCilindrada()} cilindradas!");
         }
     }
