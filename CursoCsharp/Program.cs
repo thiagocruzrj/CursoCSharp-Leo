@@ -50,6 +50,7 @@ namespace CursoCSharp
                 {"Getters and Setters - Classes e Métodos", GetSet.Executar},
                 {"Propriedades - Classes e Métodos", Propriedades.Executar},
                 {"Readonly - Classes e Métodos", Readonly.Executar},
+                {"Exemplo Enum - Classes e Métodos", ExemploEnum.Executar},
             });
 
             central.SelecionarEExecutar();
