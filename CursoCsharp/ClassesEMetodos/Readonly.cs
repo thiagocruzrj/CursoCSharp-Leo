@@ -5,7 +5,8 @@ namespace CursoCsharp.ClassesEMetodos
     public class Cliente
     {
         public string Nome;
-        DateTime Nascimento;
+        // Usamos readonly para quando o valor é imutavel e poder ser inicializado pelo construtor
+        readonly DateTime Nascimento;
 
         public Cliente(string nome, DateTime nascimento)
         {
@@ -23,7 +24,10 @@ namespace CursoCsharp.ClassesEMetodos
     {
         public static void Executar()
         {
+            var novoCliente = new Cliente("Thiago Cruz", new DateTime(1994, 3, 18));
 
+            Console.WriteLine(novoCliente.Nome);
+            Console.WriteLine(novoCliente.GetNascimento());
         }
     }
 }
