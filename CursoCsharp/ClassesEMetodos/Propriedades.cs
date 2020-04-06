@@ -9,7 +9,7 @@ namespace CursoCsharp.ClassesEMetodos
 
         public string Nome
         {
-            get { return "Opcional: " + nome; }
+            get { return "\nOpcional: " + nome; }
             set { nome = value; }
         }
 
@@ -38,7 +38,13 @@ namespace CursoCsharp.ClassesEMetodos
     {
         public static void Executar()
         {
+            var op1 = new CarroOpcional("Ar condicionado", 3999);
+            Console.WriteLine(op1.PrecoComDesconto);
 
+            var op2 = new CarroOpcional("Direcao Eletrica", 2000);
+            Console.WriteLine(op2.Nome);
+            Console.WriteLine(op2.Preco);
+            Console.WriteLine(op2.PrecoComDesconto);
         }
     }
 }
