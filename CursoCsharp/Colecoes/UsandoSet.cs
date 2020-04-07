@@ -17,6 +17,7 @@ namespace CursoCsharp.Colecoes
                 new Produto("Camisa", 30.0),
                 new Produto("Jogo", 70.0),
                 new Produto("Vioão", 150.0),
+                new Produto("Vioão", 150.0)
             };
 
             carrinho.UnionWith(combo);
