@@ -1,4 +1,5 @@
 ﻿using CursoCsharp.ClassesEMetodos;
+using CursoCsharp.Colecoes;
 using CursoCsharp.EstruturasDeControle;
 using CursoCsharp.Fundamentos;
 using System;
@@ -56,6 +57,8 @@ namespace CursoCSharp
                 {"Valor vs Referencia - Classes e Métodos", ValorVsReferencia.Executar},
                 {"Parametros por Referencia - Classes e Métodos", ParametrosPorReferencia.Executar},
                 {"Parametro com valor padrão - Classes e Métodos", ParametroPadrao.Executar},
+                // Coleções
+                {"Usando array - Coleções", UsandoArray.Executar},
             });
 
             central.SelecionarEExecutar();
