@@ -61,6 +61,7 @@ namespace CursoCSharp
                 {"Usando array - Coleções", UsandoArray.Executar},
                 {"Usando listas - Coleções", UsandoListas.Executar},
                 {"Usando Array List - Coleções", UsandoArrayList.Executar},
+                {"Usando Set - Coleções", UsandoSet.Executar},
             });
 
             central.SelecionarEExecutar();
