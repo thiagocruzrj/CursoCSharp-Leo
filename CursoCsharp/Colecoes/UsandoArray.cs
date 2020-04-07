@@ -17,6 +17,17 @@ namespace CursoCsharp.Colecoes
             {
                 Console.WriteLine(aluno);
             }
+
+            double somatorio = 0;
+            double[] notas = { 6.9, 9.9, 6.7, 3.5, 9.2 };
+
+            foreach (var nota in notas)
+            {
+                somatorio += nota;
+            }
+
+            double media = somatorio / notas.Length;
+            Console.WriteLine($"A média da turma foi {media}.");
         }
     }
 }
