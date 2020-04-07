@@ -26,6 +26,14 @@ namespace CursoCsharp.Colecoes
                 somatorio += nota;
             }
 
+            // Exemplo com for
+            //for (int i = 0; i < notas.Length; i++)
+            //{
+            //    somatorio += notas[i];
+            //}
+
+            Console.WriteLine(somatorio);
+
             double media = somatorio / notas.Length;
             Console.WriteLine($"A média da turma foi {media}.");
 
