@@ -3,39 +3,29 @@ using System.Collections.Generic;
 
 namespace CursoCsharp.Colecoes
 {
-    public class ProdutoSet
-    {
-        public string Nome;
-        public double Preco;
-
-        public ProdutoSet(string nome, double preco)
-        {
-            Nome = nome;
-            Preco = preco;
-        }
-    }
     class UsandoSet
     {
         public static void Executar()
         {
-            var livro = new ProdutoSet("Game of Thrones", 49.9);
-            var carrinho = new List<ProdutoSet>();
+            var livro = new Produto("Game of Thrones", 49.9);
+            var carrinho = new HashSet<Produto>();
+            // HashSet não é uma estrutura indexada, não aceitando assim duplicação de itens
             carrinho.Add(livro);
 
-            var combo = new List<ProdutoSet>
+            var combo = new HashSet<Produto>
             {
-                new ProdutoSet("Camisa", 30.0),
-                new ProdutoSet("Jogo", 70.0),
-                new ProdutoSet("Vioão", 150.0),
+                new Produto("Camisa", 30.0),
+                new Produto("Jogo", 70.0),
+                new Produto("Vioão", 150.0),
             };
 
-            carrinho.AddRange(combo);
+            carrinho.UnionWith(combo);
             Console.WriteLine(carrinho.Count);
-            carrinho.RemoveAt(0);
+            //carrinho.RemoveAt(0);
 
             foreach (var produto in carrinho)
             {
-                Console.Write(carrinho.IndexOf(produto));
+                //Console.Write(carrinho.IndexOf(produto));
                 Console.WriteLine($"{produto.Nome} {produto.Preco}");
             }
         }
