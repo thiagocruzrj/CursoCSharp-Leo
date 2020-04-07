@@ -28,6 +28,10 @@ namespace CursoCsharp.Colecoes
 
             double media = somatorio / notas.Length;
             Console.WriteLine($"A média da turma foi {media}.");
+
+            char[] letras = { 'A', 'r', 'r', 'a', 'y' };
+            string palavra = new string(letras);
+            Console.WriteLine(palavra);
         }
     }
 }
