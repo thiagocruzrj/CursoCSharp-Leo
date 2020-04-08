@@ -30,7 +30,8 @@ namespace CursoCsharp.OO
             return VelocidadeAtual;
         }
 
-        public int Acelerar()
+        // somente com o modificador virtual conseguimos sobreescrever o metodo
+        public virtual int Acelerar()
         {
             return AlterarVelocidade(5);
         }
@@ -51,6 +52,17 @@ namespace CursoCsharp.OO
         public Bmw() : base(320)
         {
         }
+
+        public override int Acelerar()
+        {
+            return AlterarVelocidade(15);
+        }
+
+        // Ocutando o método da classe pai
+        public new int Frear()
+        {
+            return AlterarVelocidade(-10);
+        }
     }
 
     class Heranca
@@ -66,10 +78,10 @@ namespace CursoCsharp.OO
 
             Console.WriteLine("\nBMW ...");
             Bmw carro2 = new Bmw();
-            Console.WriteLine(carro1.Acelerar());
-            Console.WriteLine(carro1.Acelerar());
-            Console.WriteLine(carro1.Frear());
-            Console.WriteLine(carro1.Frear());
+            Console.WriteLine(carro2.Acelerar());
+            Console.WriteLine(carro2.Acelerar());
+            Console.WriteLine(carro2.Frear());
+            Console.WriteLine(carro2.Frear());
         }
     }
 }
