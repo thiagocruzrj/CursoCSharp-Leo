@@ -82,6 +82,22 @@ namespace CursoCsharp.OO
             Console.WriteLine(carro2.Acelerar());
             Console.WriteLine(carro2.Frear());
             Console.WriteLine(carro2.Frear());
+
+            // Ao criar um carro do tipo Bmw damos override no metodo pai, mas o metodo oculto 
+            // dentro da classe Bmw não é utilizado
+            Console.WriteLine("Bmw com tipo Carro...");
+            Carro carro3 = new Bmw();
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
+
+            Console.WriteLine("\nUno com tipo Carro...");
+            carro3 = new Uno();
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Acelerar());
+            Console.WriteLine(carro3.Frear());
+            Console.WriteLine(carro3.Frear());
         }
     }
 }
