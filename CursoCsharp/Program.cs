@@ -2,6 +2,7 @@
 using CursoCsharp.Colecoes;
 using CursoCsharp.EstruturasDeControle;
 using CursoCsharp.Fundamentos;
+using CursoCsharp.MetodosEFuncoes;
 using CursoCsharp.OO;
 using System;
 using System.Collections.Generic;
@@ -76,6 +77,9 @@ namespace CursoCSharp
                 {"Classes Abstratas - Orientação a objetos", ClassesAbstratas.Executar},
                 {"Interfaces - Orientação a objetos", Interfaces.Executar},
                 {"Sealed - Orientação a objetos", Sealed.Executar},
+
+                // Metodos e Funções
+                {"Lambda - Metodos e Funções", ExemploLambda.Executar},
             });
 
             central.SelecionarEExecutar();
