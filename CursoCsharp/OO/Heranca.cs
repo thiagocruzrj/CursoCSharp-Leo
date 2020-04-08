@@ -41,11 +41,35 @@ namespace CursoCsharp.OO
         }
     }
 
+    public class Uno : Carro
+    {
+        public Uno() : base(200) { }
+    }
+
+    public class Bmw : Carro
+    {
+        public Bmw() : base(320)
+        {
+        }
+    }
+
     class Heranca
     {
         public static void Executar()
         {
+            Console.WriteLine("Uno ...");
+            Uno carro1 = new Uno();
+            Console.WriteLine(carro1.Acelerar());
+            Console.WriteLine(carro1.Acelerar());
+            Console.WriteLine(carro1.Frear());
+            Console.WriteLine(carro1.Frear());
 
+            Console.WriteLine("\nBMW ...");
+            Bmw carro2 = new Bmw();
+            Console.WriteLine(carro1.Acelerar());
+            Console.WriteLine(carro1.Acelerar());
+            Console.WriteLine(carro1.Frear());
+            Console.WriteLine(carro1.Frear());
         }
     }
 }
