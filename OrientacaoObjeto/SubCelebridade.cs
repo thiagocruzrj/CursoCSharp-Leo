@@ -2,7 +2,7 @@
 
 namespace OrientacaoObjeto
 {
-    class SubCelebridade
+    public class SubCelebridade
     {
         // Todos
         public string InfoPublica = "Tenho um Ig";
