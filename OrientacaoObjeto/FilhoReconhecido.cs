@@ -2,7 +2,7 @@
 
 namespace OrientacaoObjeto
 {
-    class FilhoReconhecido : SubCelebridade
+    public class FilhoReconhecido : SubCelebridade
     {
         public new void MeusAcessos()
         {

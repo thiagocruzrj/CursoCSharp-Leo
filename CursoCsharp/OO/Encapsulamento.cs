@@ -37,7 +37,13 @@ namespace CursoCsharp.OO
     {
         public static void Executar()
         {
+            SubCelebridade sub = new SubCelebridade();
 
+            new SubCelebridade().MeusAcessos();
+            new FilhoReconhecido().MeusAcessos();
+            new AmigoProximo().MeusAcessos();
+            new FilhoNaoReconhecido().MeusAcessos();
+            new AmigoDistante().MeusAcessos();
         }
     }
 }

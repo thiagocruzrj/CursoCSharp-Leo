@@ -2,7 +2,7 @@
 
 namespace OrientacaoObjeto
 {
-    class AmigoProximo
+    public class AmigoProximo
     {
         public readonly SubCelebridade amigo = new SubCelebridade();
 
