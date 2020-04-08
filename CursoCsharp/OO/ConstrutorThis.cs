@@ -26,6 +26,7 @@ namespace CursoCsharp.OO
             Altura = altura;
         }
 
+        // mostra implicitamente quando chamamos uma string
         public override string ToString()
         {
             return $"{Nome} tem {Altura} de altura!";
@@ -36,7 +37,11 @@ namespace CursoCsharp.OO
     {
         public static void Executar()
         {
+            var spike = new Cachorro("Spike");
+            var max = new Cachorro("Max", 40);
 
+            Console.WriteLine(spike);
+            Console.WriteLine(max.ToString());
         }
     }
 }
