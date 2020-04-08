@@ -31,6 +31,10 @@ namespace CursoCsharp.OO
     // A classe abstrata serve para ser herdada por outras classes, sendo que as classes concretas que herdarem
     // obrigatoriamente precisamos implementar todos os metodos abstratos que foram recebidos por herança
 
+    // Classes concretas - Metodos implementados
+    // Classes abstradas - Metodos implementados(concretos)/ Metodos não implementados(abstrados) - Quando outra classe herdar tem obrigatoriedade de implementar os metodos abstratos(incompletos);
+    // Interfaces - Todos os metodos abstratos nos quais devem ser implementados - contrato
+
     class ClassesAbstratas
     {
         public static void Executar()
