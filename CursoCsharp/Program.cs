@@ -75,6 +75,7 @@ namespace CursoCSharp
                 {"Polimorfismo - Orientação a objetos", Polimorfismo.Executar},
                 {"Classes Abstratas - Orientação a objetos", ClassesAbstratas.Executar},
                 {"Interfaces - Orientação a objetos", Interfaces.Executar},
+                {"Sealed - Orientação a objetos", Sealed.Executar},
             });
 
             central.SelecionarEExecutar();
