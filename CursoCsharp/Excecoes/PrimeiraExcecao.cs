@@ -29,12 +29,14 @@ namespace CursoCsharp.Excecoes
 
             try
             {
+                //int.Parse("abc");
                 conta.Sacar(1600);
                 Console.WriteLine("Saque realizado com sucesso");
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.GetType().Name);
             }
             finally
             {
