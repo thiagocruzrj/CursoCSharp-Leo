@@ -88,8 +88,8 @@ namespace CursoCSharp
                 {"Metodos De Extencao - Metodos e Funções", MetodosDeExtencao.Executar},
 
                 // Exceções
-                {"Exececao - Exececaes", PrimeiraExcecao.Executar},
-                {"Excecoes Personalizadas - Exececaes", ExcecoesPersonalizadas.Executar},
+                {"Exececao - Exceções", PrimeiraExcecao.Executar},
+                {"Excecoes Personalizadas - Exceções", ExcecoesPersonalizadas.Executar},
             });
 
             central.SelecionarEExecutar();
