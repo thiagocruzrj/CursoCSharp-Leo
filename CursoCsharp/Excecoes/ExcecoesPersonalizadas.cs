@@ -48,6 +48,10 @@ namespace CursoCsharp.Excecoes
             {
                 Console.WriteLine(ex.Message);
             }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
