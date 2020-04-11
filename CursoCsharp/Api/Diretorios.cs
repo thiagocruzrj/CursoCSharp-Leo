@@ -9,7 +9,7 @@ namespace CursoCsharp.Api
         {
             var novoDir = @"~/PastaCsharp".ParseHome();
             var novoDirDestino = @"~/PastaCsharpDestino".ParseHome();
-            var novoDirProj = @"~/Documents/GitHub/CursoCSharp-Leo".ParseHome();
+            var novoDirProj = @"C:/Users/thiago.justo_ext/Documents/GitHub/CursoCSharp-Leo";
 
             if (Directory.Exists(novoDir))
             {
@@ -23,6 +23,12 @@ namespace CursoCsharp.Api
 
             Directory.CreateDirectory(novoDir);
             Console.WriteLine(Directory.GetCreationTime(novoDir));
+            Console.WriteLine("== Pasta ===================");
+            var pastas = Directory.GetDirectories(novoDirProj);
+            foreach (var pasta in pastas)
+            {
+                Console.WriteLine(pasta);
+            }
         }
     }
 }
