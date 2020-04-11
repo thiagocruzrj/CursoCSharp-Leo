@@ -29,6 +29,13 @@ namespace CursoCsharp.Api
             {
                 Console.WriteLine(pasta);
             }
+
+            Console.WriteLine("\n\n== Arquivos ============");
+            var arquivos = Directory.GetFiles(novoDirProj);
+            foreach (var arquivo in arquivos)
+            {
+                Console.WriteLine(arquivo);
+            }
         }
     }
 }
