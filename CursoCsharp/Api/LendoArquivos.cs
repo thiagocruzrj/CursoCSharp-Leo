@@ -18,6 +18,19 @@ namespace CursoCsharp.Api
                     sw.WriteLine("Borracha;0.99;1");
                 }
             }
+
+            try
+            {
+                using(StreamReader sr = new StreamReader(path))
+                {
+                    var texto = sr.ReadToEnd();
+                    Console.WriteLine(texto);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
