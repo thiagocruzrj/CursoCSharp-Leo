@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CursoCsharp.ClassesEMetodos;
+using System;
 
 namespace CursoCsharp.TopicosAvancados
 {
@@ -24,11 +25,36 @@ namespace CursoCsharp.TopicosAvancados
         }
     }
 
+    class CaixaInt : Caixa<int>
+    {
+        public CaixaInt() : base(0)
+        {
+
+        }
+    }
+
+    class CaixaProduto : Caixa<Produto>
+    {
+        public CaixaProduto() : base(new Produto())
+        {
+
+        }
+    }
+
     class ExemploGeneric
     {
         public static void Executar()
         {
+            var caixa1 = new Caixa<int>(1000);
+            Console.WriteLine(caixa1.metodoGenerico(33));
+            Console.WriteLine(caixa1.Coisa.GetType());
 
+            var caixa2 = new Caixa<string>("Construtor");
+            Console.WriteLine(caixa2.metodoGenerico("Destrutor"));
+            Console.WriteLine(caixa2.Coisa.GetType());
+
+            CaixaProduto caixa3 = new CaixaProduto();
+            Console.WriteLine(caixa3.Coisa.GetType());
         }
     }
 }
