@@ -26,11 +26,28 @@ namespace CursoCsharp.TopicosAvancados
                 new Aluno() {Nome = "Marcio", Idade = 18, Nota = 6.8 }
             };
 
-            Console.WriteLine("== Aprovados ==================");
+            Console.WriteLine("\n== Aprovados ==================");
             var aprovados = alunos.Where(a => a.Nota >= 7.0).OrderByDescending(a => a.Nota);
             foreach (var aluno in aprovados)
             {
-                Console.WriteLine(aluno.Nome + " nota: " + aluno.Nota);
+                Console.WriteLine(aluno.Nome + " com nota: " + aluno.Nota);
+            }
+
+            Console.WriteLine("\n== Chamada ====================");
+            var chamada = alunos.OrderBy(a => a.Nome).Select(a => a.Nome);
+            foreach (var aluno in chamada)
+            {
+                Console.WriteLine(aluno);
+            }
+
+            Console.WriteLine("\n== Aprovados (por idade) ====================");
+            var aprovadosPorIdade = from aluno in alunos
+                                    where aluno.Nota >= 7
+                                    orderby aluno.Idade
+                                    select aluno.Nome;
+            foreach (var aluno in aprovadosPorIdade)
+            {
+                Console.WriteLine(aluno);
             }
         }
     }
