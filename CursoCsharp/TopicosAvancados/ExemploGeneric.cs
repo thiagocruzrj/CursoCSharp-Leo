@@ -14,7 +14,7 @@ namespace CursoCsharp.TopicosAvancados
             valorPrivado = Coisa;
         }
 
-        public T metodoGenerico(T valor)
+        public T MetodoGenerico(T valor)
         {
             return new Random().Next(0, 2) == 0 ? Coisa : valor;
         }
@@ -46,11 +46,11 @@ namespace CursoCsharp.TopicosAvancados
         public static void Executar()
         {
             var caixa1 = new Caixa<int>(1000);
-            Console.WriteLine(caixa1.metodoGenerico(33));
+            Console.WriteLine(caixa1.MetodoGenerico(33));
             Console.WriteLine(caixa1.Coisa.GetType());
 
             var caixa2 = new Caixa<string>("Construtor");
-            Console.WriteLine(caixa2.metodoGenerico("Destrutor"));
+            Console.WriteLine(caixa2.MetodoGenerico("Destrutor"));
             Console.WriteLine(caixa2.Coisa.GetType());
 
             CaixaProduto caixa3 = new CaixaProduto();

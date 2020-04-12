@@ -33,6 +33,7 @@ namespace CursoCSharp
                 {"Operadores de Atribuição - Fundamentos", OperadoresAtribuicao.Executar},
                 {"Operadores Unários - Fundamentos", OperadoresUnarios.Executar},
                 {"Operadore Ternário - Fundamentos", OperadorTernario.Executar},
+
                 // Estruturas de controle
                 {"Estrutura If - Estruturas de Controle", EstruturaIf.Executar},
                 {"Estrutura If/Else - Estruturas de Controle", EstruturaIfElse.Executar},
@@ -44,6 +45,7 @@ namespace CursoCSharp
                 {"Estrutura Foreach - Estruturas de Controle", EstruturaForeach.Executar},
                 {"Usando Break - Estruturas de Controle", UsandoBreak.Executar},
                 {"Usando Continue - Estruturas de Controle", UsandoContinue.Executar},
+
                 // Classes e metodos
                 {"Membros - Classes e Métodos", Membros.Executar},
                 {"Construtores - Classes e Métodos", Construtores.Executar},
@@ -62,6 +64,7 @@ namespace CursoCSharp
                 {"Valor vs Referencia - Classes e Métodos", ValorVsReferencia.Executar},
                 {"Parametros por Referencia - Classes e Métodos", ParametrosPorReferencia.Executar},
                 {"Parametro com valor padrão - Classes e Métodos", ParametroPadrao.Executar},
+
                 // Coleções
                 {"Usando array - Coleções", UsandoArray.Executar},
                 {"Usando listas - Coleções", UsandoListas.Executar},
